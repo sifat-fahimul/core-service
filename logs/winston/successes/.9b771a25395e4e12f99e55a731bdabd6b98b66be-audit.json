@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\successes\\.9b771a25395e4e12f99e55a731bdabd6b98b66be-audit.json",
+    "files": [
+        {
+            "date": 1707969594089,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\successes\\phu-2024-15-02-09-success.log",
+            "hash": "f78fa60489d6412e27a7a0774410fe59096bd53365622456785096b8f64caf6c"
+        },
+        {
+            "date": 1707969612660,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\successes\\phu-2024-15-02-10-success.log",
+            "hash": "d70c5b69f06774dee1b7fe854ff1981178dff8e16dfbf9432a9752ce5a367913"
+        },
+        {
+            "date": 1707975775546,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\successes\\phu-2024-15-02-11-success.log",
+            "hash": "01f651c9801f729522f044cb0eda9c31a7ae2ae23fde92266c4940adf7a8dae6"
+        },
+        {
+            "date": 1707977302012,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\successes\\phu-2024-15-02-12-success.log",
+            "hash": "9f74f782c2e23985e3d6a5e559681da648dbfb480ed33a8c5368678875b951cf"
+        }
+    ],
+    "hashType": "sha256"
+}
