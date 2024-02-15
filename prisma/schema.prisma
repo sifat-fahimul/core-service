@@ -21,8 +21,7 @@ model AcademicSemester {
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt()
 
-  students  Student[]
-  faculties Faculty[]
+  students Student[]
 
   @@map("academic_semester")
 }
@@ -33,6 +32,8 @@ model AcademicFaculty {
   createdAt           DateTime             @default(now())
   updatedAt           DateTime             @updatedAt()
   academicDepartments AcademicDepartment[]
+  students            Student[]
+  faculties           Faculty[]
 
   @@map("academic_faculty")
 }
@@ -65,11 +66,14 @@ model Student {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt()
 
-  academicSemister  AcademicSemester @relation(fields: [academicSemeterId], references: [id])
-  academicSemeterId String
+  academicSemester   AcademicSemester @relation(fields: [academicSemesterId], references: [id])
+  academicSemesterId String
 
   academicDepartment   AcademicDepartment @relation(fields: [academicDepartmentId], references: [id])
   academicDepartmentId String
+
+  academicFaculty   AcademicFaculty @relation(fields: [academicFacultyId], references: [id])
+  academicFacultyId String
 
   @@map("students")
 }
@@ -89,11 +93,11 @@ model Faculty {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt()
 
-  academicSemister  AcademicSemester @relation(fields: [academicSemeterId], references: [id])
-  academicSemeterId String
-
   academicDepartment   AcademicDepartment @relation(fields: [academicDepartmentId], references: [id])
   academicDepartmentId String
+
+  cademicFaculty    AcademicFaculty @relation(fields: [academicFacultyId], references: [id])
+  academicFacultyId String
 
   @@map("faculties")
 }
