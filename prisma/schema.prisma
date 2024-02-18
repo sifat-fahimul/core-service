@@ -102,20 +102,24 @@ model Faculty {
   @@map("faculties")
 }
 
-// model Building{
-//   id String @id @default(uuid())
-//   title String
-//    createdAt DateTime @default(now())
-//   updatedAt DateTime @updatedAt()
+model Building {
+  id        String   @id @default(uuid())
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt()
+  rooms     Room[]
 
-//   @@map("buildings")
-// }
+  @@map("buildings")
+}
 
-// model Room{
-//   id String @id @default(uuid())
-//   roomNumber String
-//    createdAt DateTime @default(now())
-//   updatedAt DateTime @updatedAt()
+model Room {
+  id         String   @id @default(uuid())
+  roomNumber String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt()
 
-//   @@map("rooms")
-// }
+  building   Building @relation(fields: [buildingId], references: [id])
+  buildingId String
+
+  @@map("rooms")
+}
