@@ -10,5 +10,11 @@ const create = z.object({
     }),
   }),
 });
+const update = z.object({
+  body: z.object({
+    title: z.string().optional(),
+    academicFacultyId: z.string().optional(),
+  }),
+});
 
-export const AcademicDepartmentValidation = { create };
+export const AcademicDepartmentValidation = { create, update };

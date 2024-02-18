@@ -34,6 +34,21 @@
             "date": 1707995099429,
             "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-15-02-17-error.log",
             "hash": "11049888da2e31a9603a1a5432092c77904047d249c22e4f7c17cee1d68d195a"
+        },
+        {
+            "date": 1708227939689,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-18-02-09-error.log",
+            "hash": "fd7f7a117b5574adb4411d51266cb4a9b80d18b5dd80d3034e8801c60b1d2051"
+        },
+        {
+            "date": 1708229135907,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-18-02-10-error.log",
+            "hash": "1bf115d9ac183dbfcad3e231d3208d3104b9a31fb4eccec7bd491b7355352a3a"
+        },
+        {
+            "date": 1708232443489,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-18-02-11-error.log",
+            "hash": "9a092c31b414e68410c54a139fa162bc23c615950f5c56e61daaf0a0e7f17dd0"
         }
     ],
     "hashType": "sha256"

@@ -25,4 +25,22 @@ const create = z.object({
   }),
 });
 
-export const AcademicSemesterValidation = { create };
+const update = z.object({
+  body: z.object({
+    year: z.number().optional(),
+    title: z
+      .enum([...academicSemesterTitles] as [string, ...string[]])
+      .optional(),
+    code: z
+      .enum([...academicSemesterCodes] as [string, ...string[]])
+      .optional(),
+    startMonth: z
+      .enum([...academicSemesterMonths] as [string, ...string[]])
+      .optional(),
+    endMonth: z
+      .enum([...academicSemesterMonths] as [string, ...string[]])
+      .optional(),
+  }),
+});
+
+export const AcademicSemesterValidation = { create, update };

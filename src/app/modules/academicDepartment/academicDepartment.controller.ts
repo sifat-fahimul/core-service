@@ -40,8 +40,33 @@ const getSingleFromDB = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const updateIntoDB = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const payload = req.body;
+  const result = await AcademicDepartmentService.updateIntoDB(id, payload);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'academic department Updated successfully',
+    data: result,
+  });
+});
+
+const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await AcademicDepartmentService.deleteFromDB(id);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'academic department Deleted successfully',
+    data: result,
+  });
+});
+
 export const AcademicDepartmentController = {
   insertIntoDB,
   getAllFromDB,
   getSingleFromDB,
+  updateIntoDB,
+  deleteFromDB,
 };
