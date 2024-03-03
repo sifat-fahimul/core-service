@@ -9,7 +9,7 @@ import { OfferedCourseRoute } from '../modules/offeredCourse/offeredCourse.route
 import { OfferedCourseClassScheduleRoute } from '../modules/offeredCourseClassSchedule/offeredCourseClassSchedule.route';
 import { OfferedCourseSectionRoute } from '../modules/offeredCourseSection/offeredCourseSection.route';
 import { RoomRoute } from '../modules/room/room.route';
-import { SemesterRegistrationRoute } from '../modules/semesterRegister/semesterRegister.route';
+import { SemesterRegistrationRoute } from '../modules/semesterRegistration/semesterRegistration.route';
 import { StudentRoute } from '../modules/student/student.route';
 
 const router = express.Router();

@@ -3,8 +3,8 @@ import httpStatus from 'http-status';
 import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
-import { semesterRegistrationFilterableFields } from './semesterRegister.constant';
-import { SemesterRegistrationService } from './semesterRegister.service';
+import { semesterRegistrationFilterableFields } from './semesterRegistration.constant';
+import { SemesterRegistrationService } from './semesterRegistration.service';
 
 const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
   const result = await SemesterRegistrationService.insertIntoDB(req.body);
@@ -64,10 +64,54 @@ const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+
+const startMyRegistration = catchAsync(async (req: Request, res: Response) => {
+  const user = (req as any).user;
+  const result = await SemesterRegistrationService.startMyRegistration(
+    user.userId
+  );
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Student Semester Registration successfully',
+    data: result,
+  });
+});
+
+const enrollIntoCourse = catchAsync(async (req: Request, res: Response) => {
+  const user = (req as any).user;
+  const result = await SemesterRegistrationService.enrollIntoCourse(
+    user.userId,
+    req.body
+  );
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Student Semester Course Enrolled successfully',
+    data: result,
+  });
+});
+const withdrewFromCourse = catchAsync(async (req: Request, res: Response) => {
+  const user = (req as any).user;
+  const result = await SemesterRegistrationService.withdrewFromCourse(
+    user.userId,
+    req.body
+  );
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Student Semester Course withdraw successfully',
+    data: result,
+  });
+});
+
 export const SemesterRegisterController = {
   insertIntoDB,
   getAllFromDB,
   getSingleFromDB,
   updateIntoDB,
   deleteFromDB,
+  startMyRegistration,
+  enrollIntoCourse,
+  withdrewFromCourse,
 };
