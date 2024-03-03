@@ -6,9 +6,13 @@ import { SemesterRegisterController } from './semesterRegistration.controller';
 import { SemesterRegistrationValidation } from './semesterRegistration.validation';
 
 const router = express.Router();
+router.get(
+  '/get-my-registration',
+  auth(ENUM_USER_ROLE.STUDENT),
+  SemesterRegisterController.getMyRegistration
+);
 router.get('/', SemesterRegisterController.getAllFromDB);
 router.get('/:id', SemesterRegisterController.getSingleFromDB);
-
 router.post(
   '/start-registration',
   auth(ENUM_USER_ROLE.STUDENT),
@@ -37,13 +41,20 @@ router.delete(
 
 router.post(
   '/enroll-into-course',
+  validateRequest(SemesterRegistrationValidation.enrollOrWithDrawCourse),
   auth(ENUM_USER_ROLE.STUDENT),
   SemesterRegisterController.enrollIntoCourse
 );
 router.post(
   '/withdraw-from-course',
+  validateRequest(SemesterRegistrationValidation.enrollOrWithDrawCourse),
   auth(ENUM_USER_ROLE.STUDENT),
   SemesterRegisterController.withdrewFromCourse
+);
+router.post(
+  '/confirm-my-registration',
+  auth(ENUM_USER_ROLE.STUDENT),
+  SemesterRegisterController.confirmMyRegistration
 );
 
 export const SemesterRegistrationRoute = router;
