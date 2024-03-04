@@ -56,5 +56,10 @@ router.post(
   auth(ENUM_USER_ROLE.STUDENT),
   SemesterRegisterController.confirmMyRegistration
 );
+router.post(
+  '/:id/start-new-semester',
+  auth(ENUM_USER_ROLE.ADMIN),
+  SemesterRegisterController.startNewSemester
+);
 
 export const SemesterRegistrationRoute = router;
