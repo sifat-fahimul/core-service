@@ -11,6 +11,11 @@ router.get(
   auth(ENUM_USER_ROLE.STUDENT),
   SemesterRegisterController.getMyRegistration
 );
+router.get(
+  '/get-my-semester-courses',
+  auth(ENUM_USER_ROLE.STUDENT),
+  SemesterRegisterController.getMySemesterRegCourses
+);
 router.get('/', SemesterRegisterController.getAllFromDB);
 router.get('/:id', SemesterRegisterController.getSingleFromDB);
 router.post(

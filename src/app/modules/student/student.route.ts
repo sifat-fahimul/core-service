@@ -6,6 +6,21 @@ import { StudentController } from './student.controller';
 import { StudentValidation } from './student.validation';
 
 const router = express.Router();
+router.get(
+  '/my-courses',
+  auth(ENUM_USER_ROLE.STUDENT),
+  StudentController.myCourses
+);
+router.get(
+  '/my-course-schedule',
+  auth(ENUM_USER_ROLE.STUDENT),
+  StudentController.getMyCourseSchedules
+);
+router.get(
+  '/my-academic-info',
+  auth(ENUM_USER_ROLE.STUDENT),
+  StudentController.myAcademicInfo
+);
 router.get('/', StudentController.getAllFromDB);
 router.get('/:id', StudentController.getSingleFromDB);
 router.post(
