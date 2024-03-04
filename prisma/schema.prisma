@@ -270,19 +270,19 @@ model studentSemesterRegistrationCourse {
 }
 
 model StudentEnrolledCourse {
-  id                         String                      @id @default(uuid())
-  createdAt                  DateTime                    @default(now())
-  updatedAt                  DateTime                    @updatedAt
+  id                         String                       @id @default(uuid())
+  createdAt                  DateTime                     @default(now())
+  updatedAt                  DateTime                     @updatedAt
   studentId                  String
-  student                    Student                     @relation(fields: [studentId], references: [id])
+  student                    Student                      @relation(fields: [studentId], references: [id])
   courseId                   String
-  course                     Course                      @relation(fields: [courseId], references: [id])
+  course                     Course                       @relation(fields: [courseId], references: [id])
   academicSemesterId         String
-  academicSemester           AcademicSemester            @relation(fields: [academicSemesterId], references: [id])
+  academicSemester           AcademicSemester             @relation(fields: [academicSemesterId], references: [id])
   grade                      String?
-  point                      Float?                      @default(0)
-  totalMarks                 Int?                        @default(0)
-  status                     SemesterRegistrationStatus? @default(ONGOING)
+  point                      Float?                       @default(0)
+  totalMarks                 Int?                         @default(0)
+  status                     StudentEnrolledCourseStatus? @default(ONGOING)
   studentEnrolledCourseMarks StudentEnrolledCourseMark[]
 
   @@map("student_enrolled_courses")

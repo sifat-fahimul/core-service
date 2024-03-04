@@ -356,9 +356,9 @@ const startNewSemester = async (id: string): Promise<{ message: string }> => {
       'semester registration is not ended yet!'
     );
   }
-  // if (semesterRegistration.academicSemesters.isCurrent) {
-  //   throw new ApiError(httpStatus.BAD_REQUEST, 'semester is already started!');
-  // }
+  if (semesterRegistration.academicSemesters.isCurrent) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'semester is already started!');
+  }
   await prisma.$transaction(async prismaTransactionClient => {
     await prismaTransactionClient.academicSemester.updateMany({
       where: { isCurrent: true },
