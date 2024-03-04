@@ -4,6 +4,11 @@ import auth from '../../middlewares/auth';
 import { StudentEnrolledCourseMarkController } from './studentEnrolledCourseMarks.controller';
 
 const router = express.Router();
+router.get(
+  '/my-marks',
+  auth(ENUM_USER_ROLE.STUDENT),
+  StudentEnrolledCourseMarkController.getMyCourseMarks
+);
 
 router.get(
   '/',
