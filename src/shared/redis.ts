@@ -61,7 +61,7 @@ const delAccessToken = async (userId: string): Promise<void> => {
 export const RedisClient = {
   connect,
   publish: redisPubClient.publish.bind(redisPubClient),
-  subscribe: redisSubClient.publish.bind(redisSubClient),
+  subscribe: redisSubClient.subscribe.bind(redisSubClient),
   set,
   get,
   del,
