@@ -209,6 +209,11 @@
             "date": 1710158484507,
             "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-11-03-18-error.log",
             "hash": "c97620d16dd2ee759935677775009f69a9d96ae7d508dad08c2dfe56f3c5e9bb"
+        },
+        {
+            "date": 1710213138592,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-12-03-09-error.log",
+            "hash": "6e74c334871db5d403f31e72f179781faa3e871b7a66673b097093dff8e86855"
         }
     ],
     "hashType": "sha256"

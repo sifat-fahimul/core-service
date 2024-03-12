@@ -229,7 +229,6 @@ const getMyAcademicInfo = async (authUserId: string): Promise<any> => {
 };
 
 const createStudentFromEvent = async (e: any) => {
-  console.log(e);
   const studentData: Partial<Student> = {
     studentId: e.id,
     firstName: e.name.firstName,

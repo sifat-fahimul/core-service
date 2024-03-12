@@ -339,6 +339,23 @@ const getMyCourseStudents = async (
   };
 };
 
+const createFacultyFromEvent = async (e: any) => {
+  const facultyData: Partial<Faculty> = {
+    facultyId: e.id,
+    firstName: e.name.firstName,
+    lastName: e.name.lastName,
+    middleName: e.name.middleName,
+    email: e.email,
+    contactNo: e.contactNo,
+    gender: e.gender,
+    bloodGroup: e.bloodGroup,
+    designation: e.designation,
+    academicDepartmentId: e.academicDepartment.syncId,
+    academicFacultyId: e.academicFaculty.syncId,
+  };
+  await insertIntoDB(facultyData as Faculty);
+};
+
 export const FacultyService = {
   insertIntoDB,
   getAllFromDB,
@@ -349,4 +366,5 @@ export const FacultyService = {
   removeCourses,
   myCourses,
   getMyCourseStudents,
+  createFacultyFromEvent,
 };

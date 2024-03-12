@@ -1,0 +1,23 @@
+Tue Mar 12 2024 9:36:1 } [PH] error: Cannot read properties of undefined (reading 'firstName')
+Tue Mar 12 2024 9:39:33 } [PH] error: Cannot read properties of undefined (reading 'firstName')
+Tue Mar 12 2024 9:41:17 } [PH] error: Cannot read properties of undefined (reading 'firstName')
+Tue Mar 12 2024 9:44:29 } [PH] error: Cannot read properties of undefined (reading 'firstName')
+Tue Mar 12 2024 9:47:20 } [PH] error: 
+Invalid `prisma.faculty.create()` invocation:
+
+{
+  data: {
+    facultyId: "F-00006",
++   firstName: String
+  },
+  include: {
+    academicDepartment: true,
+    academicFaculty: true
+  }
+}
+
+Argument `firstName` is missing.
+Tue Mar 12 2024 9:48:18 } [PH] error: Cannot read properties of undefined (reading 'firstName')
+Tue Mar 12 2024 9:50:16 } [PH] error: Cannot read properties of undefined (reading 'firstName')
+Tue Mar 12 2024 9:50:59 } [PH] error: Cannot read properties of undefined (reading 'firstName')
+Tue Mar 12 2024 9:51:44 } [PH] error: Cannot read properties of undefined (reading 'firstName')
