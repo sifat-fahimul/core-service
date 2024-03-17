@@ -6,86 +6,6 @@
     "auditLog": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\.d666bbb533ae375e1df2e4a2f18d04de6b87e39e-audit.json",
     "files": [
         {
-            "date": 1709185574230,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-29-02-11-error.log",
-            "hash": "e3e34af46cfd6daee2ebcee42f7c492ca6e8ca15e2676ab2ba2021ffb3742462"
-        },
-        {
-            "date": 1709186671042,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-29-02-12-error.log",
-            "hash": "130e754db43c9fabaa19aaa6783203d9fa88c80457dbf7ceb35e0d2bf9a68dca"
-        },
-        {
-            "date": 1709190097553,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-29-02-13-error.log",
-            "hash": "eaab80f9b9cf879ed304998fcc5fc7816a92225e1235b22d2d110c632b16db56"
-        },
-        {
-            "date": 1709349872192,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-02-03-09-error.log",
-            "hash": "ed17dc965b8170bdfc4c3e6c6e6ce1a892434dc9d5c9f395420b8b051a58d5a6"
-        },
-        {
-            "date": 1709352542893,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-02-03-10-error.log",
-            "hash": "2ad1db893829327a69aaa3b94b171ca579790343cc886f4e1fdf49f9a60d4547"
-        },
-        {
-            "date": 1709357527473,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-02-03-11-error.log",
-            "hash": "5f257b6ee3ef6693caf05ed9c1baf757bc1a5641923d58802fe09a7a4a0ef894"
-        },
-        {
-            "date": 1709359355521,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-02-03-12-error.log",
-            "hash": "a3229042ed0ecba7e82f6b93d9aa7592d6c71a6824c261c4f68a2fd9dc9411de"
-        },
-        {
-            "date": 1709362861963,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-02-03-13-error.log",
-            "hash": "bfdb6c0624914e6950d3b15ec30da0e02a8de84d88f8dc021a0b89143e497ec0"
-        },
-        {
-            "date": 1709371500604,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-02-03-15-error.log",
-            "hash": "11e2fea3a31860b0219f62b3bb1850499b546b25dc81e4db8b8aa62609e49e9d"
-        },
-        {
-            "date": 1709374141192,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-02-03-16-error.log",
-            "hash": "bf7344bfec0f90f629d14b46fae590178fd143d0473b88af7fd7d99d82f660de"
-        },
-        {
-            "date": 1709378977937,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-02-03-17-error.log",
-            "hash": "4bd2c2332d1d2139b471b1517f53d36add7b4132a46030404b490648cb20455e"
-        },
-        {
-            "date": 1709380978074,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-02-03-18-error.log",
-            "hash": "0ab0a928d26419e9218ec963afe409f524023e7c2f6d02250240ed3e5f37fd09"
-        },
-        {
-            "date": 1709436659487,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-03-03-09-error.log",
-            "hash": "6d7ef6f05849f2b73bae8fc8db399b6e5ac8d1acc30388f4801ce8863154118e"
-        },
-        {
-            "date": 1709438423715,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-03-03-10-error.log",
-            "hash": "87c148849e1a3943a40592bf13c4e8f82c0ed891a9cd25095fe8b0ddb9480d87"
-        },
-        {
-            "date": 1709442901660,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-03-03-11-error.log",
-            "hash": "219573c21fbe25948016ae1dd7f6b0282217b63086e265f399d5a086a9c1ebc1"
-        },
-        {
-            "date": 1709445793307,
-            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-03-03-12-error.log",
-            "hash": "abe9ac02838f375d89812c1076be6345bc40db52f06a3082cf23782c1fd3f387"
-        },
-        {
             "date": 1709450211017,
             "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-03-03-13-error.log",
             "hash": "b5733be9ee17b7331cd70fa4fa5e766976991cb977df8a19d66e39d9a88a2d55"
@@ -214,6 +134,21 @@
             "date": 1710213138592,
             "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-12-03-09-error.log",
             "hash": "6e74c334871db5d403f31e72f179781faa3e871b7a66673b097093dff8e86855"
+        },
+        {
+            "date": 1710402541899,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-14-03-13-error.log",
+            "hash": "bc49901ba84438e7b2dcf52baa7652dffe60bdc92175c537c6b7dbc6cdd022ba"
+        },
+        {
+            "date": 1710654461160,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-17-03-11-error.log",
+            "hash": "4346cf7961fafd2736308e84276a39a7335389b45ac42e67255643dfc154042d"
+        },
+        {
+            "date": 1710655417509,
+            "name": "D:\\sifat-fahimul\\Sifat-Fahimul\\Level.2\\core-service\\logs\\winston\\errors\\phu-2024-17-03-12-error.log",
+            "hash": "31786f8d8f4433889610d32eb9e91e70e47384e441efd3a53978b5fc1725e2ed"
         }
     ],
     "hashType": "sha256"
